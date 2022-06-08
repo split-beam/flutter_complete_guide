@@ -1,6 +1,6 @@
 # flutter_complete_guide
 
-A new Flutter project.
+A Flutter learning experiance via udemy
 
 ## Getting Started
 
