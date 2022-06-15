@@ -1,6 +1,7 @@
 // ignore_for_file: deprecated_member_use
 
 import 'package:flutter/material.dart';
+import 'package:flutter_complete_guide/answer.dart';
 
 import './question.dart';
 
@@ -41,21 +42,12 @@ class _MyAppState extends State<MyApp> {
         ),
         body: Column(
           children: <Widget>[
-            Question(questions[_questionIndex]),
-            RaisedButton(
-              child: Text('Answer 1'),
-              onPressed: _answerQuestion,
+            Question(
+              questions[_questionIndex],
             ),
-            RaisedButton(
-              child: Text('Answer 2'),
-              onPressed: () => print('Answer 2 chosen!'),
-            ),
-            RaisedButton(
-              child: Text('Answer 3'),
-              onPressed: () {
-                print('Answer 3 chosen!');
-              },
-            ),
+            Answer(_answerQuestion),
+            Answer(_answerQuestion),
+            Answer(_answerQuestion),
           ],
         ),
       ),
